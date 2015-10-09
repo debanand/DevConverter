@@ -1,0 +1,69 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/images"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="#FF7FFF00"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="62dp" />
+
+    <EditText
+        android:id="@+id/Option1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/spinner"
+        android:layout_below="@+id/spinner"
+        android:background="#FF7FFF00"
+        android:layout_marginTop="31dp"
+        
+        android:ems="10"
+        android:inputType="number" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/Option2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/Option1"
+        android:layout_below="@+id/Option1"
+        android:background="#FF7FFF00"
+        android:layout_marginTop="46dp"
+        android:ems="10"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/Converter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/Option2"
+        android:layout_alignRight="@+id/Option2"
+        android:layout_below="@+id/Option2"
+        android:layout_marginTop="28dp"
+        android:text="Convert" />
+
+    <TextView
+        android:id="@+id/Result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/Converter"
+        android:layout_below="@+id/Converter"
+        android:layout_marginRight="72dp"
+        android:layout_marginTop="36dp"
+        android:text="Result"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+</RelativeLayout>
